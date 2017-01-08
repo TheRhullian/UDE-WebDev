@@ -1,0 +1,8 @@
+JAVA SCRIPT -  CONTROLA TODAS AS INTERAÇÕES DO USUÁRIO COM A SUA PÁGINA
+
+FUNÇÕES PRÉ-DEFINIDAS:
+alert() 							- //Função que forma uma caixa de diálogo para dar uma notificação. Entre os parênteses colocar uma String.
+confirm() 							- //Retorna uma resposta do usuário, deve ser associado a um 'var'(Variável do JavaScript)
+console.log()						- //O que for colocado entre parênteses vai ser mostrado no console do navegador (ctrl+shift+j)
+document.getElementById()			- //document é para referenciar o documento em questão e o 'pegar o elemento pelo ID'
+   ''         ''         .onclick()	- //Ao pegar o elemento do documento especifica qual evento irar programar, no caso será onclick 'quando clicar']

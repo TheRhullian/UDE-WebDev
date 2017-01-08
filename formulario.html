@@ -35,11 +35,61 @@
 			</div>
 
 			<div class="form-group">
-				<label for="email">Li o contrato</label>
-				<input type="checkbox" name="li" id="li" required>
+				<label for="contrato">Li o contrato</label>
+				<input type="checkbox" name="li" id="li" required checked>
 			</div>
 
+			<div class="form-group">
+				<label for="volume">Volume</label>
+				<input type="range" name="volume" id="volume" min="0" max="100" value="32">
+			</div>
+
+			<div class="form-group">
+				<label for="meter">Bateria</label>
+				<meter name="meter" min="0" max="100" low="15" value="50">50</meter>
+				<meter name="meter" min="0" max="100" low="15" value="12">12</meter>
+			</div>
+
+			<div class="form-group">
+				<label for="meter">Carregando</label>
+				<progress min="0" max="100" value="10">10%</progress>
+				<progress min="0" max="100" value="60">60%</progress>
+			</div>
 			
+			<div class="form-group">
+				<label for="ano">Ano Fabricação</label>
+				<input type="number" name="ano" id="ano" class="form-control" min="1920" max="2016" step="4" value="2016">
+			</div>
+
+			<div class="form-group">
+				<label for="cor">Cor</label>
+				<input type="color" name="cor" id="cor" class="form-control">
+			</div>
+
+			<div class="form-group">
+				<label for="url">url</label>
+				<input type="url" name="url" id="url" class="form-control">
+			</div>
+
+			<div class="form-group">
+				<label for="busca">Buscar</label>
+				<input type="search" name="busca" id="busca" class="form-control">
+			</div>
+
+			<div class="form-group">
+				<label for="mensagem">Mensagem</label>
+				<textarea name="mensagem" id="mensagem"	cols="30" rows="10"></textarea>
+			</div>
+
+			<div class="form-group">
+				<label for="estados">Estados</label>
+				<select name="estados" id="estados">
+					<option value="SP">São Paulo</option>
+					<option value="RJ" selected>Rio de Janeiro</option>
+					<option value="ES">Espírito Santo</option>
+				</select>
+			</div>
+
 			<div>
 				<button type="submit" class="btn btn-primary">Cadastrar</button>
 			</div>

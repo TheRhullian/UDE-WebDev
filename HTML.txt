@@ -63,6 +63,38 @@ TUDO QUE ESTIVER DEPOIS DO '=' DO ATRIBUTO É O SEU DESIGNADO VALOR (QUE DVE ESTA
 						<input type="radio" name="sexo" id="feminino">
 						<label for="feminino">Feminino</label>
 					</div>
+					
+					
+					<div class="form-group">
+						<label for="meter">Bateria</label>
+						<meter min="0" max="100" low="15" value="50">50</meter> - MEDIDOR, BARRA DE CARREGAMENTO BATERIA. ATRIBUTO LOW DEFINE EM QUAL VALOR COMEÇA O ALERTA
+						<meter min="0" max="100" low="15" value="12">12</meter>
+					</div>
+					
+					<div class="form-group">
+						<label for="meter">Carregando</label>
+						<progress min="0" max="100" value="10">10</progress> - MESMO CONCEITO DE METER MAS ESTE É MAIS USADO EM UPLOAD OU DOWNLOAD
+						<progress min="0" max="100" value="60">60</progress>
+					</div>
+					
+					<div class="form-group">
+						<label for="ano">Ano Fabricação</label>
+						<input type="number" name="ano" id="ano" class="form-control" min="1920" max="2016" step="4" value="2016"> - ESTE POSSUI UM NOVO ATRIBUTO CHAMADO STEP QUE DEFINE DE QUANTO EM QUANTO ELE PULA ENTRE VALORES
+					</div>
+					
+					<div class="form-group">
+						<label for="cor">Cor</label>
+						<input type="color" name="cor" id="cor" class="form-control"> - ESTE É UM PEGADOR DE CORES, ABRE O COLOR PICKER DO SISTEMA PARA ESCOLHER UMA COR
+					</div>
+					
+					<div class="form-group">
+						<label for="estados">Estados</label>
+						<select name="estados" id="estados"> - EXEMPLO DE COMBO-BOX
+							<option value="SP">São Paulo</option>
+							<option value="RJ" selected>Rio de Janeiro</option> - OPÇÕES DA COMBO-BOX, SENDO QUE ESTE VAI SER MOSTRADO POR PADRÃO POR TER O 'SELECTED'
+							<option value="ES">Espírito Santo</option>
+						</select>
+					</div>
 				
 				</form> -  TAG USADA PARA SE MONTAR FORMULÁRIOS, AGRUPAR OS DADOS PARA SEREM ENVIADOS. Atributos:	-action: define para onde será enviado(ONDE?)
 																													-method: método para enviar o formulário(COMO?)

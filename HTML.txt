@@ -93,8 +93,28 @@ TUDO QUE ESTIVER DEPOIS DO '=' DO ATRIBUTO É O SEU DESIGNADO VALOR (QUE DVE ESTA
 							<option value="SP">São Paulo</option>
 							<option value="RJ" selected>Rio de Janeiro</option> - OPÇÕES DA COMBO-BOX, SENDO QUE ESTE VAI SER MOSTRADO POR PADRÃO POR TER O 'SELECTED'
 							<option value="ES">Espírito Santo</option>
+							<option value="PR">Paraná</option>
+							<option value="SC">Santa Catarina</option>
+							<option value="RS">Rio Grande do Sul</option>
 						</select>
 					</div>
+					
+					<div class="form-group">
+						<label for="estados">Estados</label>
+						<select name="estados" id="estados" multiple size="4"> - ATRIBUTO MULTIPLE FAZ COM QUE APAREÇA VÁRIOS E O SIZE DEFINE QUANTOS DEVEM APARECER POR VEZ
+							<optgroup label="Sudeste"> - ESTE AGRUPA AS OPTIONS, FAZENDO COM QUE HAJA TITULOS PARA CADA GRUPO DE OPTIONS
+								<option value="SP">São Paulo</option>
+								<option value="RJ" selected>Rio de Janeiro</option>
+								<option value="ES">Espírito Santo</option>
+							</optgroup>
+							<optgroup label="Sul">
+								<option value="PR">Paraná</option>
+								<option value="SC">Santa Catarina</option>
+								<option value="RS">Rio Grande do Sul</option>
+							</optgroup>
+						</select>
+					</div>
+					
 				
 				</form> -  TAG USADA PARA SE MONTAR FORMULÁRIOS, AGRUPAR OS DADOS PARA SEREM ENVIADOS. Atributos:	-action: define para onde será enviado(ONDE?)
 																													-method: método para enviar o formulário(COMO?)

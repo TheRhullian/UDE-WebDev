@@ -13,17 +13,17 @@
 			
 			<div class="form-group">
 				<label for="nome">Nome</label>
-				<input type="text" name="nome" id="nome" class="form-control" placeholder="Digite o seu nome" required>
+				<input type="text" name="nome" id="nome" class="form-control" placeholder="Digite o seu nome" required autofocus tabindex="1" disabled>
 			</div>
 
 			<div class="form-group">
 				<label for="email">Email</label>
-				<input type="email" name="email" id="email" class="form-control" placeholder="seu@email.com" required>
+				<input type="email" name="email" id="email" class="form-control" placeholder="seu@email.com" required tabindex="2">
 			</div>
 
 			<div class="form-group">
 				<label for="nascimento">Data de Nascimento</label>
-				<input type="date" name="nascimento" id="nascimento" class="form-control" min="2016-01-01" max="2016-01-15" required>
+				<input type="date" name="nascimento" id="nascimento" class="form-control" min="2016-01-01" max="2016-01-15" required readonly>
 			</div>
 
 			<div class="form-group">
@@ -58,7 +58,7 @@
 			
 			<div class="form-group">
 				<label for="ano">Ano Fabricação</label>
-				<input type="number" name="ano" id="ano" class="form-control" min="1920" max="2016" step="4" value="2016">
+				<input type="number" name="ano" id="ano" class="form-control" min="1920" max="2016" step="4" value="2016" tabindex="3">
 			</div>
 
 			<div class="form-group">
@@ -78,7 +78,7 @@
 
 			<div class="form-group">
 				<label for="mensagem">Mensagem</label>
-				<textarea name="mensagem" id="mensagem"	cols="30" rows="10"></textarea>
+				<textarea name="mensagem" id="mensagem"	cols="30" rows="10" tabindex="4"></textarea>
 			</div>
 
 			<div class="form-group">
@@ -109,8 +109,40 @@
 				</select>
 			</div>
 
+			<input type="hidden" name="id" value="1">
+
+			<div class="form-group">
+				<label for="senha">Senha</label>
+				<input type="password" name="senha">
+			</div>
+
+			<div class="form-group">
+				<label for="mes">Mês</label>
+				<input type="month" name="mes" id="mes" class="form-control" min="2016" max="2017">
+			</div>
+
+			<div class="form-group">
+				<label for="semana">Semana</label>
+				<input type="week" name="semana" id="semana" class="form-control" >
+			</div>
+
+			<div class="form-group">
+				<label for="time">Tempo</label>
+				<input type="time" name="time" id="time" class="form-control" >
+			</div>
+
+			<div class="form-group">
+				<input type="text" list="navegadores">
+				<datalist id="navegadores">
+					<option value="Chrome">
+					<option value="Firefox">
+					<option value="Safari">
+					<option value="Edge">
+				</datalist>
+			</div>
+
 			<div>
-				<button type="submit" class="btn btn-primary">Cadastrar</button>
+				<button type="submit" class="btn btn-primary" tabindex="5">Cadastrar</button>
 			</div>
 
 		</form>

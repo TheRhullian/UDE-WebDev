@@ -1,48 +1,51 @@
 0)TAGS -  QUALQUER COISA QUE ESTIVER ENTRE <>
 
+Angular 2 - https://codecraft.tv/courses/ng2/
+PHP - https://www.codeschool.com/courses/try-php
+
 <> </> - MAIOR PARTE DAS TAGS PRECISAM <ABRIR> E </FECHAR>
 
-TUDO QUE ESTIVER DENTRO DE UMA TAG … UM ATRIBUTO
-TUDO QUE ESTIVER DEPOIS DO '=' DO ATRIBUTO … O SEU DESIGNADO VALOR (QUE DVE ESTAR ENTRE ASPAS)
+TUDO QUE ESTIVER DENTRO DE UMA TAG √â UM ATRIBUTO
+TUDO QUE ESTIVER DEPOIS DO '=' DO ATRIBUTO √â O SEU DESIGNADO VALOR (QUE DVE ESTAR ENTRE ASPAS)
 
 
-1) TAGS IMPORTANTES QUE S√O A BASE DO HTML
+1) TAGS IMPORTANTES QUE S√ÉO A BASE DO HTML
 
-<!DOCTYPE html> - Tipo de arquivo que ser· lido
+<!DOCTYPE html> - Tipo de arquivo que ser√° lido
 <html> - TAG QUE INICIALIZA UM DOCUMENTO HTML
 	
-	<head> 	- TAG HEAD POSSUI TUDO QUE SER¡ ANALISADO PELO NAVEGADOR ANTES DE SER INICIALIZADO(PRIORIDADE)
+	<head> 	- TAG HEAD POSSUI TUDO QUE SER√Å ANALISADO PELO NAVEGADOR ANTES DE SER INICIALIZADO(PRIORIDADE)
 		
-		<meta charset="utf-8"> - USADO PARA CARREGAR TODOS OS CARACTERES QUE SER√O UTILIZADOS NA P¡GINA. "utf-8" … UNIVERSAL, CORRIGE ACENTUA«√O
+		<meta charset="utf-8"> - USADO PARA CARREGAR TODOS OS CARACTERES QUE SER√ÉO UTILIZADOS NA P√ÅGINA. "utf-8" √â UNIVERSAL, CORRIGE ACENTUA√á√ÉO
 		
-		<title></title> - VAI O TÕTULO DA P¡GINA
+		<title></title> - VAI O T√çTULO DA P√ÅGINA
 		
-		<link rel="stylesheet" href="css/estilo.css"> - @rel: 	QUAL A RELA«√O DESTE ARQUIVO PARA COM A P¡GINA (stylesheet - Estilo)
-														@href: 	AONDE EST¡ LOCALIZADA O ARQUIVO QUE DESEJA LINKAR, TODA VEZ QUE TIVE '/'
-															… REFERENTE A UM DIRET”RIO
+		<link rel="stylesheet" href="css/estilo.css"> - @rel: 	QUAL A RELA√á√ÉO DESTE ARQUIVO PARA COM A P√ÅGINA (stylesheet - Estilo)
+														@href: 	AONDE EST√Å LOCALIZADA O ARQUIVO QUE DESEJA LINKAR, TODA VEZ QUE TIVE '/'
+															√â REFERENTE A UM DIRET√ìRIO
 														
 	</head>
 	
-	<body>	- TAG BODY POSSUI TODO O CONTE⁄DO DO SITE, OU SEJA, O QUE ESTIVER DENTRO O USU¡RIO VAI VER OU INTERAGIR. 
+	<body>	- TAG BODY POSSUI TODO O CONTE√öDO DO SITE, OU SEJA, O QUE ESTIVER DENTRO O USU√ÅRIO VAI VER OU INTERAGIR. 
 			  TUDO QUE FOR VISUAL ENTRA.
 			  
 			  <header>
 				
 				<nav>
-				</nav> 	- USADO PARA MENU DE NAVEGA«√O 
+				</nav> 	- USADO PARA MENU DE NAVEGA√á√ÉO 
 			  
-			  </header> - CABE«ALHO DA P¡GINA. ANTES ERA USADO COM <div id="header ou topo">
+			  </header> - CABE√áALHO DA P√ÅGINA. ANTES ERA USADO COM <div id="header ou topo">
 			  
 			  
 			  <section>
-				<button id="btn_calcular">Calcular</button> - FORMA MAIS UTILIZADA HOJE PARA SE CRIAR UM BOT√O
-				<input type="button" id="btn_calcular2" value="Calcular"> - FORMA ANTIGA DE SE CRIAR BOT√O(@deprecated)
+				<button id="btn_calcular">Calcular</button> - FORMA MAIS UTILIZADA HOJE PARA SE CRIAR UM BOT√ÉO
+				<input type="button" id="btn_calcular2" value="Calcular"> - FORMA ANTIGA DE SE CRIAR BOT√ÉO(@deprecated)
 			  
-				<form action="contato.php" method="POST ou GET(padr„o caso deixe em branco)">
+				<form action="contato.php" method="POST ou GET(padr√£o caso deixe em branco)">
 				
 					<div class="form-group"> 
 						<label for="exampleInputEmail1">Email</label>
-						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" required> - REQUIRED TORNA O PREENCHUMENTO OBRIGAT”RIO E O PLACEHOLDER … O TEXTO SUGESTIVO DO COMPONENTE
+						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" required> - REQUIRED TORNA O PREENCHUMENTO OBRIGAT√ìRIO E O PLACEHOLDER √â O TEXTO SUGESTIVO DO COMPONENTE
 					</div>
 					  
 					<div class="form-group">
@@ -51,12 +54,12 @@ TUDO QUE ESTIVER DEPOIS DO '=' DO ATRIBUTO … O SEU DESIGNADO VALOR (QUE DVE ESTA
 					</div>
 					
 					<div class="form-group">
-						<label for="nascimento">Data de Nascimento</label> - FOR … UTILIZADO PARA SABER PARA QUAL COMPONENTE O LABEL FAZ REFER NCIA
-						<input type="date" name="nascimento" id="nascimento" class="form-control" min="2016-01-01" max="2016-01-15" required> - INPUT DO TIPO DE 'DATE' USADO PARA INSERIR DATAS, POSSUI DOIS ATRIBUTOS F¡CEIS:	-min: DATA MÕNIMA
-																																																								-max: DATA M¡XIMA
+						<label for="nascimento">Data de Nascimento</label> - FOR √â UTILIZADO PARA SABER PARA QUAL COMPONENTE O LABEL FAZ REFER√äNCIA
+						<input type="date" name="nascimento" id="nascimento" class="form-control" min="2016-01-01" max="2016-01-15" required> - INPUT DO TIPO DE 'DATE' USADO PARA INSERIR DATAS, POSSUI DOIS ATRIBUTOS F√ÅCEIS:	-min: DATA M√çNIMA
+																																																								-max: DATA M√ÅXIMA
 					</div>
 					
-					<div class="form-group"> - EM CASOS COMO ESSE DE RADIO BUTTONS, DEIXAR O 'name' IGUAL PARA QUE S” POSSA SELECIONAR UM
+					<div class="form-group"> - EM CASOS COMO ESSE DE RADIO BUTTONS, DEIXAR O 'name' IGUAL PARA QUE S√ì POSSA SELECIONAR UM
 						<label>Sexo</label>
 						<input type="radio" name="sexo" id="masculino">
 						<label for="masculino">Masculino</label>
@@ -67,33 +70,33 @@ TUDO QUE ESTIVER DEPOIS DO '=' DO ATRIBUTO … O SEU DESIGNADO VALOR (QUE DVE ESTA
 					
 					<div class="form-group">
 						<label for="meter">Bateria</label>
-						<meter min="0" max="100" low="15" value="50">50</meter> - MEDIDOR, BARRA DE CARREGAMENTO BATERIA. ATRIBUTO LOW DEFINE EM QUAL VALOR COME«A O ALERTA
+						<meter min="0" max="100" low="15" value="50">50</meter> - MEDIDOR, BARRA DE CARREGAMENTO BATERIA. ATRIBUTO LOW DEFINE EM QUAL VALOR COME√áA O ALERTA
 						<meter min="0" max="100" low="15" value="12">12</meter>
 					</div>
 					
 					<div class="form-group">
 						<label for="meter">Carregando</label>
-						<progress min="0" max="100" value="10">10</progress> - MESMO CONCEITO DE METER MAS ESTE … MAIS USADO EM UPLOAD OU DOWNLOAD
+						<progress min="0" max="100" value="10">10</progress> - MESMO CONCEITO DE METER MAS ESTE √â MAIS USADO EM UPLOAD OU DOWNLOAD
 						<progress min="0" max="100" value="60">60</progress>
 					</div>
 					
 					<div class="form-group">
-						<label for="ano">Ano FabricaÁ„o</label>
+						<label for="ano">Ano Fabrica√ß√£o</label>
 						<input type="number" name="ano" id="ano" class="form-control" min="1920" max="2016" step="4" value="2016"> - ESTE POSSUI UM NOVO ATRIBUTO CHAMADO STEP QUE DEFINE DE QUANTO EM QUANTO ELE PULA ENTRE VALORES
 					</div>
 					
 					<div class="form-group">
 						<label for="cor">Cor</label>
-						<input type="color" name="cor" id="cor" class="form-control"> - ESTE … UM PEGADOR DE CORES, ABRE O COLOR PICKER DO SISTEMA PARA ESCOLHER UMA COR
+						<input type="color" name="cor" id="cor" class="form-control"> - ESTE √â UM PEGADOR DE CORES, ABRE O COLOR PICKER DO SISTEMA PARA ESCOLHER UMA COR
 					</div>
 					
 					<div class="form-group">
 						<label for="estados">Estados</label>
 						<select name="estados" id="estados"> - EXEMPLO DE COMBO-BOX
-							<option value="SP">S„o Paulo</option>
-							<option value="RJ" selected>Rio de Janeiro</option> - OP«’ES DA COMBO-BOX, SENDO QUE ESTE VAI SER MOSTRADO POR PADR√O POR TER O 'SELECTED'
-							<option value="ES">EspÌrito Santo</option>
-							<option value="PR">Paran·</option>
+							<option value="SP">S√£o Paulo</option>
+							<option value="RJ" selected>Rio de Janeiro</option> - OP√á√ïES DA COMBO-BOX, SENDO QUE ESTE VAI SER MOSTRADO POR PADR√ÉO POR TER O 'SELECTED'
+							<option value="ES">Esp√≠rito Santo</option>
+							<option value="PR">Paran√°</option>
 							<option value="SC">Santa Catarina</option>
 							<option value="RS">Rio Grande do Sul</option>
 						</select>
@@ -101,14 +104,14 @@ TUDO QUE ESTIVER DEPOIS DO '=' DO ATRIBUTO … O SEU DESIGNADO VALOR (QUE DVE ESTA
 					
 					<div class="form-group">
 						<label for="estados">Estados</label>
-						<select name="estados" id="estados" multiple size="4"> - ATRIBUTO MULTIPLE FAZ COM QUE APARE«A V¡RIOS E O SIZE DEFINE QUANTOS DEVEM APARECER POR VEZ
+						<select name="estados" id="estados" multiple size="4"> - ATRIBUTO MULTIPLE FAZ COM QUE APARE√áA V√ÅRIOS E O SIZE DEFINE QUANTOS DEVEM APARECER POR VEZ
 							<optgroup label="Sudeste"> - ESTE AGRUPA AS OPTIONS, FAZENDO COM QUE HAJA TITULOS PARA CADA GRUPO DE OPTIONS
-								<option value="SP">S„o Paulo</option>
+								<option value="SP">S√£o Paulo</option>
 								<option value="RJ" selected>Rio de Janeiro</option>
-								<option value="ES">EspÌrito Santo</option>
+								<option value="ES">Esp√≠rito Santo</option>
 							</optgroup>
 							<optgroup label="Sul">
-								<option value="PR">Paran·</option>
+								<option value="PR">Paran√°</option>
 								<option value="SC">Santa Catarina</option>
 								<option value="RS">Rio Grande do Sul</option>
 							</optgroup>
@@ -116,17 +119,17 @@ TUDO QUE ESTIVER DEPOIS DO '=' DO ATRIBUTO … O SEU DESIGNADO VALOR (QUE DVE ESTA
 					</div>
 					
 				
-				</form> -  TAG USADA PARA SE MONTAR FORMUL¡RIOS, AGRUPAR OS DADOS PARA SEREM ENVIADOS. Atributos:	-action: define para onde ser· enviado(ONDE?)
-																													-method: mÈtodo para enviar o formul·rio(COMO?)
+				</form> -  TAG USADA PARA SE MONTAR FORMUL√ÅRIOS, AGRUPAR OS DADOS PARA SEREM ENVIADOS. Atributos:	-action: define para onde ser√° enviado(ONDE?)
+																													-method: m√©todo para enviar o formul√°rio(COMO?)
 			  
-			  </section> - AQUI LOCALIZA TODO CONTE⁄DO QUE … IMPORTANTE DA P¡GINA. O QUE N√O FOR DEVE USAR A <div></div>
+			  </section> - AQUI LOCALIZA TODO CONTE√öDO QUE √â IMPORTANTE DA P√ÅGINA. O QUE N√ÉO FOR DEVE USAR A <div></div>
 			  
 			  <footer>
-			  </footer> -  RODAP… DO SITE		
+			  </footer> -  RODAP√â DO SITE		
 			  
 			  
-			  <script type="text/javascript" src="js/script.js"></script> - @type:TIPO DE ARQUIVO QUE EST¡ SENDO PROCURADO
-																			@src: LOCALIZA«√O DO ARQUIVO
+			  <script type="text/javascript" src="js/script.js"></script> - @type:TIPO DE ARQUIVO QUE EST√Å SENDO PROCURADO
+																			@src: LOCALIZA√á√ÉO DO ARQUIVO
 			  
 	</body>
 	

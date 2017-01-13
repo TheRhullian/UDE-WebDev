@@ -107,7 +107,7 @@ header .header-black li.club-22{
 
 #menu li{
 
-	display: inline-block;
+	display:inline-block;
 	font-family: 'Open-Sans';
 }
 
@@ -125,6 +125,26 @@ header .header-black li.club-22{
 	height: 30px;
 	line-height: 30px;
 
+}
+
+#menu li.search div {
+
+	display: inline-block;
+	
+}
+
+#menu li.search button {
+	background: none;
+	border: none;
+	position:absolute;
+	right: 3px;
+	top: 4px;
+}
+
+#menu li.search button i {
+	font-size: 14px;
+	color: rgba(255,255,255,0.5);
+	
 }
 
 #menu li.search input::-webkit-input-placeholder {

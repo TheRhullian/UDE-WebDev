@@ -117,13 +117,19 @@ header .header-black li.club-22{
 }
 
 #menu li.search{
-
+	transition:1s;
 	width: 182px;
 
 }
 
-#menu li.search input{
+#menu li.search.ativo{
 
+	width: 200px;
+
+}
+
+#menu li.search input{
+	
 	background-color: #5C2D90;
 	color: #FFF;
 	border:none;
@@ -131,6 +137,13 @@ header .header-black li.club-22{
 	line-height: 30px;
 
 }
+
+#menu li.search.ativo input{
+	transition:1s;
+	width: 200px;
+
+}
+
 
 #menu li.search div {
 
@@ -173,6 +186,11 @@ header .header-black {
 header #logotipo {
 	top:20px;
 	position: absolute;
+	z-index: 3;
+}
+
+#banner h1.efeito {
+	color: #5C2D90; 
 }
 
 #banner {
@@ -185,6 +203,7 @@ header #logotipo {
 }
 
 #banner h1 {
+	transition: 1s;
 	color:#FFF;
 	top: 300px;
 	font-size: 92px;
